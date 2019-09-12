@@ -185,8 +185,12 @@ nav .nav-links {
   padding: 0 2%;
 }
 nav .nav-links a {
-  color: #000;
+  color: #212529;
   text-decoration: none;
+}
+nav .nav-links a:hover {
+  text-decoration: underline;
+  color: #007f80;
 }
 .footer {
   width: 100%;
@@ -252,4 +256,22 @@ nav .nav-links a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.home .content-pick .destination .btn-container .btn {
+  width: 100%;
+  background-color: #007f80;
+  color: #fff;
+  border-radius: 15px;
+  padding: 5%;
+  font-size: 2rem;
+}
+.home .content-pick .destination .btn-container .btn:hover {
+  background-color: #001a1a;
+  cursor: pointer;
 }

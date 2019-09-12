@@ -3,3 +3,15 @@
   padding-bottom: 30px;
   border-bottom: 2px dashed @navigation-border;
 }
+
+.btn-styling(@width, @bg-color, @font-color, @border-radius) {
+  width: @width;
+  background-color: @bg-color;
+  color: @font-color;
+  border-radius: @border-radius;
+
+  &:hover {
+    background-color: darken(@bg-color, 20%);
+    cursor: pointer;
+  }
+}
