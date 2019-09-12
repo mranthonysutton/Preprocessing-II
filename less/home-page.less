@@ -100,9 +100,17 @@
         text-align: center;
 
         .btn {
-          .btn-styling(100%, @eastern-blue, #fff, 15px);
+          .btn-styling();
           padding: 5%;
           font-size: 2rem;
+
+          @media @tablet {
+            .btn-styling(65%);
+          }
+
+          @media @mobile {
+            .btn-styling();
+          }
         }
       }
     }
