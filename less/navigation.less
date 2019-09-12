@@ -7,6 +7,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media @mobile {
+      flex-direction: column;
+    }
   }
 
   .nav-links {
@@ -17,13 +21,18 @@ nav {
     padding: 0 2%;
 
     a {
-      color: #212529;
+      color: @shark;
       text-decoration: none;
 
       &:hover {
         text-decoration: underline;
-        color: #007f80;
+        color: @eastern-blue;
       }
+    }
+
+    @media @mobile {
+      width: 100%;
+      justify-content: space-evenly;
     }
   }
 }
