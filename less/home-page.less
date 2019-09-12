@@ -1,4 +1,12 @@
 .home {
+  .header-section {
+    .border-spacing();
+    padding-bottom: 2%;
+
+    .text-content {
+      padding-top: 2%;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,8 +14,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -24,8 +30,7 @@
   }
 
   .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    .border-spacing();
 
     .text-content {
       padding-left: 1%;
@@ -58,4 +63,4 @@
       margin-bottom: 30px;
     }
   }
-}// home
+} // home
