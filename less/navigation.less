@@ -1,1 +1,38 @@
 // Navigation Styles here
+nav {
+  border-bottom: 2px dashed #c0c0c0;
+  padding: 1%;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media @tablet {
+      flex-direction: column;
+    }
+  }
+
+  .nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    padding: 0 2%;
+
+    a {
+      color: @shark;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: @eastern-blue;
+      }
+    }
+
+    @media @tablet {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  }
+}

@@ -1,1 +1,17 @@
 // Mixins in here
+.border-spacing() {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed @navigation-border;
+}
+
+.btn-styling(@width: 100%, @bg-color: @eastern-blue, @font-color: #FFF, @border-radius: 15px) {
+  width: @width;
+  background-color: @bg-color;
+  color: @font-color;
+  border-radius: @border-radius;
+
+  &:hover {
+    background-color: darken(@bg-color, 20%);
+    cursor: pointer;
+  }
+}

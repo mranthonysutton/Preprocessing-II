@@ -1,4 +1,12 @@
 .home {
+  .header-section {
+    .border-spacing();
+    padding-bottom: 2%;
+
+    .text-content {
+      padding-top: 2%;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,26 +14,39 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @tablet {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @tablet {
+        width: auto;
+        align-items: center;
+      }
+
       img {
         border-radius: 10px;
       }
     }
+
+    @media @tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
   }
 
   .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    .border-spacing();
 
     .text-content {
       padding-left: 1%;
@@ -35,12 +56,23 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @tablet {
+        order: 2;
+        justify-content: center;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 8%;
+    }
 
     img {
       border-radius: 10px;
@@ -56,6 +88,38 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 100%;
+      }
+
+      .btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .btn {
+          .btn-styling();
+          padding: 5%;
+          font-size: 2rem;
+
+          @media @tablet {
+            .btn-styling(65%);
+          }
+
+          @media @mobile {
+            .btn-styling();
+          }
+        }
+      }
+    }
+
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
     }
   }
-}// home
+} // home
